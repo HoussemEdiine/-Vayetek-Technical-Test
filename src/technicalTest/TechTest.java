@@ -66,8 +66,8 @@ public class TechTest {
          while (low <= high){
              int mid = low + ( high - low)/2 ;
              // if true we can ignore the other part of the array
-          if(mid < value) low = mid+1 ;
-           else  if (mid > value) low = mid-1 ;
+          if(array[mid] < value) low = mid+1 ;
+           else  if (array[mid] > value) high = mid-1 ;
            else return  mid ;
          }
 
